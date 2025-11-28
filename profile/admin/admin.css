@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #20232a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar .logo h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.nav-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #333333;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+.main-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.main-header h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.content-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.exhibitions-list {
+    margin-top: 30px;
+}
+
+.exhibitions-list h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.exhibitions-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.exhibitions-list ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exhibitions-list ul li span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.actions a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.actions a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.form-grid input,
+.form-grid button {
+    grid-column: span 4;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.date-group {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+}
+
+.date-group label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.form-grid button {
+    grid-column: span 4;
+    background-color: #20232a;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form-grid button:hover {
+    background-color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #20232a;
+    color: #ffffff;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.delete-icon {
+    color: #3a3a3a;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    transform: scale(1.2);
+    color: #515151;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px;
+    }
+
+    .main-content {
+        margin-left: 100px;
+        width: calc(100% - 100px);
+    }
+
+    .sidebar .logo h2,
+    .nav-menu a {
+        display: none;
+    }
+
+    .sidebar .nav-menu a {
+        padding: 10px;
+    }
+}
+
+.btn {
+    background-color: #000; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #333; /* Darker shade on hover */
+    transform: translateY(-2px);
+}
+
+/* Logout Button Specific Styling */
+.au-logout-button {
+    background-color: #ff4d4f; 
+}
+
+.au-logout-button:hover {
+    background-color: #ff7875; 
+}
+
+/* Container for Logout Button */
+.au-logout-container {
+    margin-top: 20px;
+    text-align: center; 
+}

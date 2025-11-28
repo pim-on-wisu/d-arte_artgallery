@@ -1,0 +1,29 @@
+/* About Us Section Styling */
+#about-us {
+    text-align: center;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.aboutus-image-container {
+    text-align: center;
+}
+
+.aboutus-image-container img {
+    width: 100%;     
+    height: auto;     
+    object-fit: cover; 
+    display: block;    
+    margin: 0 auto; 
+    overflow: hidden; 
+}
+
+@media (max-width: 768px) {
+    #about-us .aboutus-content {
+        padding: 15px;
+    }
+
+    #about-us .aboutus-title {
+        font-size: 2em;
+    }
+}

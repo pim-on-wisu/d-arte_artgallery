@@ -1,0 +1,135 @@
+/* Artist Section Styling */
+.artist-gallery {
+    position: relative;
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.artist-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+}
+
+.artist-background img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.artist-grid {
+    position: relative;
+    z-index: 2; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 30px;
+    margin-top: 300px; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Artist Item Styling */
+.artist-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.artist-item:hover {
+    transform: translateY(-5px);
+}
+
+.artist-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #ddd;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.artist-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Artwork Collection Styling */
+.artwork-collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    text-align: center;
+    /* background-color: #aca9a9; */
+}
+
+.artwork-collection img {
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.artwork-item {
+    box-shadow: none; /* Remove any shadow */
+    padding: 0; /* Remove padding */
+    border: none; /* No border */
+}
+
+.more-art {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.more-art:hover {
+    background-color: #555;
+}
+
+.artist-see-more-button{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.artist-see-more-button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .artist-grid {
+        grid-template-columns: 1fr; /* 2 columns for tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .artist-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+}
